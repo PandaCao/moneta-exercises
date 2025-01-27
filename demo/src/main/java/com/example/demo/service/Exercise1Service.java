@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SomeService {
+public class Exercise1Service {
     // Czech vowels
     private Boolean isCharacterVowel(char  c) {
         c = Character.toLowerCase(c);
