@@ -10,9 +10,8 @@ public class Exercise2Service {
 
     private final Logger log = LoggerFactory.getLogger(Exercise2Service.class);
 
-    // TODO fix swapping ( 43256791 => 45326791 ) instead of [4, 2, 5, 6, 7, 9, 3, 1]
     private char[] swapNumber(char[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = arr.length - 2; i >= 0; i--) {
             if (arr[i] <= '3') {
                 char temp = arr[i];
                 arr[i] = arr[i + 1];
@@ -21,7 +20,6 @@ public class Exercise2Service {
         }
         return arr;
     }
-
 
     private char[] multiplyByTwo(char[] arr){
         ArrayList<Character> result = new ArrayList<>();
